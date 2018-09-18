@@ -20,10 +20,10 @@
     <script>
         var t = 0;
         box.addEventListener("touchstart",(e)=>{
-            box.innerHTML = e.target.length
+            box.innerHTML = e.touches.length
         })
         box.addEventListener("touchmove",()=>{
-            box.innerHTML = e.target.length
+            box.innerHTML = e.touches.length
         })
         box.addEventListener("touchend",()=>{
            
