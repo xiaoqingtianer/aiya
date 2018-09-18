@@ -19,11 +19,11 @@
     <div id="box">AAA</div>
     <script>
         var t = 0;
-        box.addEventListener("touchstart",(e)=>{
-            box.innerHTML = e.touches.length
+        document.addEventListener("touchstart",(e)=>{
+            box.innerHTML = e.targetTouches.length
         })
-        box.addEventListener("touchmove",()=>{
-            box.innerHTML = e.touches.length
+        document.addEventListener("touchmove",()=>{
+            box.innerHTML = e.targetTouches.length
         })
         box.addEventListener("touchend",()=>{
            
